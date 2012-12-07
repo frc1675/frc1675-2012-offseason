@@ -24,15 +24,20 @@ public class OI {
     
     private Button driverLBumper = new JoystickButton(driverController, LEFT_BUMPER);
     private Button driverRBumper = new JoystickButton(driverController, RIGHT_BUMPER);
+    private Button driverYButton = new JoystickButton(driverController, Y_BUTTON);
+    private Button driverAButton = new JoystickButton(driverController, A_BUTTON);
     private Button driverXButton = new JoystickButton(driverController, X_BUTTON);
     private Button driverBButton = new JoystickButton(driverController, B_BUTTON);
     
-    private Button yButton = new JoystickButton(operatController, Y_BUTTON);
-    private Button aButton = new JoystickButton(operatController, A_BUTTON);
-    private Button xButton = new JoystickButton(operatController, X_BUTTON);
-    private Button bButton = new JoystickButton(operatController, B_BUTTON);
+    private Button operatYButton = new JoystickButton(operatController, Y_BUTTON);
+    private Button operatAButton = new JoystickButton(operatController, A_BUTTON);
+    private Button operatXButton = new JoystickButton(operatController, X_BUTTON);
+    private Button operatBButton = new JoystickButton(operatController, B_BUTTON);
     private Button operatLBumper = new JoystickButton(operatController, LEFT_BUMPER);
     private Button operatRBumper = new JoystickButton(operatController, RIGHT_BUMPER);
+    
+    
+    
     //// CREATING BUTTONS
     // One type of button is a joystick button which is any button on a joystick.
     // You create one by telling it which joystick it's on and which button
@@ -63,6 +68,6 @@ public class OI {
     
     // Start the command when the button is released  and let it run the command
     // until it is finished as determined by it's isFinished method.
-    // button.whenReleased(new ExampleCommand());
+    // button.whenReleased(new ExampleCommand()); lol
 }
 
